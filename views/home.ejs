@@ -1,5 +1,13 @@
-<h1>This is the home page!</h1>
+<% include partials/header %>
 
-<li><a href="/register">Sign Up!"</a></li>
-<li><a href="/login">Login"</a></li>
-<li><a href="/logout">Logout!"</a></li>
+
+<div style="margin-top: 50px;" class="ui main text container segment">
+    <div class="ui huge header">Home Page</div>
+    <div class="ui link list">
+        <li><a class="ui big label active item" href="/register">Sign Up</a></li>
+        <li><a class="ui big label active item" href="/login">Login</a></li>
+        <li><a class="ui big label active item" href="/logout">Logout</a></li>
+    </div>
+</div>
+
+<% include partials/footer %>

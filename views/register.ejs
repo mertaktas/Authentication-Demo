@@ -1,11 +1,29 @@
-<h1>Sign Up Form</h1>
+<% include partials/header %>
 
-<form action="/register" method="POST">
-    <input type="text" name="username" placeholder="Username">
-    <input type="password" name="password" placeholder="password">
-    <button>Submit</button>
-</form>
+<div style="margin-top: 50px;" class="ui main text container segment">
+    <div class="ui huge header">Sign Up</div>
+    <form action="/register" method="POST" class="ui form">
+        <div class="field">
+            <label>Kullanıcı Adı: </label>
+            <input type="text" name="username" placeholder="Kullanıcı Adı">
+        </div>
+        <div class="field">
+            <label>Parola: </label>
+            <input type="password" name="password" placeholder="Parola">
+        </div>
+        <div class="field">
+            <div class="ui checkbox">
+                <input type="checkbox" name="example">
+                <label>Kullanıcı Sözleşmesini ve Kişisel Verilerin Korunması Politikasını kabul ediyorum.</label>
+            </div>
+        </div>
+        <button class="ui button" type="submit">Giriş Yap</button>
+    </form>
+    <div class="ui link list">
+        <li><a class="ui big label active item" href="/register">Sign Up</a></li>
+        <li><a class="ui big label active item" href="/login">Login</a></li>
+        <li><a class="ui big label active item" href="/logout">Logout</a></li>
+    </div>
+</div>
 
-<li><a href="/register">Sign Up!"</a></li>
-<li><a href="/login">Login"</a></li>
-<li><a href="/logout">Logout!"</a></li>
+<% include partials/footer %>
